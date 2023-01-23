@@ -1,2 +1,2 @@
 # startup
-CS 260 Web Programming
+CS 260 Web Programming - BYU
