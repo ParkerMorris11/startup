@@ -1,2 +1,2 @@
 # startup
-CS 260 Web Programming - BYU - Winter Semester 20223
+CS 260 Web Programming - BYU - Winter Semester 2023
