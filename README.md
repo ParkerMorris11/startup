@@ -6,9 +6,11 @@ I learned how succesfully commit and fetch my README file along with having a be
 Created My First Web Server on Jan 27, 2023
 http://18.117.47.87/
 
-Created My First Domain on Jan 31, 2020
+Created My First Domain on Jan 31, 2023
 http://connectfour.click/
 
+Encrypted My First Domain on Jan 6, 2023
+https://connectfour.click/
 
 
 # StartUp Project
