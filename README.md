@@ -8,6 +8,7 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 - HTML Elements
 - CSS Styling
 - Git Commands | Commit| Fetch | Add | Fetch | Fork | Clone 
+- BootStrap | CSS Styling & Declarations | Appealing Interfaces
 
 
 Created My First Web Server on Jan 27, 2023
