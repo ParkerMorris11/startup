@@ -1,7 +1,15 @@
 # startup
 CS 260 Web Programming - BYU - Winter Semester 2023
 
-I learned how succesfully commit and fetch my README file along with having a better understanding of how GitHub functions.
+# What I've Learned
+
+- I learned how succesfully commit and fetch my README file along with having a better understanding of how GitHub functions.
+- I learned how to successfully run Shell Scripts and how Sub Level Domains run
+- HTML Elements
+- CSS Styling
+- Git Commands | Commit| Fetch | Add | Fetch | Fork | Clone 
+- BootStrap | CSS Styling & Declarations | Appealing Interfaces
+
 
 Created My First Web Server on Jan 27, 2023
 http://18.117.47.87/
@@ -12,6 +20,8 @@ http://connectfour.click/
 Encrypted My First Domain on Jan 6, 2023
 https://connectfour.click/
 
+Created My First Sub Level Domain on Feb 8, 2023
+https://simon.connectfour.click/
 
 # StartUp Project
 
