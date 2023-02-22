@@ -3,80 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- This is a placeholder for when you start using CSS -->
     <link rel="stylesheet" href="index.css" />
     <title>Template</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- // HEADER //-->
     <header>
-      <h1>Hello world</h1>
+      <!--// NAV BAR //-->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="header-container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home"><span class="fa fa-home fa-lg" aria-hidden="true"></span></a>
+          </div>
+    
+          <div class="navbar-collapse collapse" id="navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="about-nav"><a href="#about-section" class="nav-link" ><i class="fa fa-id-card-o" aria-hidden="true"></i>About<span class="sr-only">(current)</span></a></li>
+                  <li class="work-nav"><a href="#work-section" class="nav-link"><i class="fa fa-code" aria-hidden="true"></i>Work</a></li>
+                  <li class="contact-nav"><a href="#contact-section" class="nav-link"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- end of nav bar -->
       
-      <img src="IMG_0653_11zon.jpg" alt="ME" 
-      width="400" 
-      height="600"/>
       
+      <div class="header-content" id="home">
+        <h1 class="animated fadeInDown">Parker Morris</h1>
+        <p class="animated fadeInUp">Freeride Skier | Mountain Biker</p>
+        
+        <hr> <!-- Divider -->
+        
+    <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://github.com/ParkerMorris11" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i></a>
+     
+          <a href="https://www.linkedin.com/in/parker-morris-85198b257/" target="_blank" class="linkedin-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:parkerqmorris@gmail.com"><i class="email-link fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+      </div>  <!--End header content -->
       
+      <!--This is an arrow to be placed at the bottom to go to the next page -->
+      <div class="down">
+          <a class="next-page" href="#about-section"><i class="animated pulse infinite fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i></a>
+      </div>
     </header>
-    <main>
-      <section>
-        <h2>ABOUT ME</h2>
-        <p>
-          I love to ski and mountain bike
-        </p>
-        <p>
-          Cursus sit amet dictum sit amet justo donec enim. Volutpat blandit
-          aliquam etiam erat velit scelerisque. Vestibulum lorem sed risus
-          ultricies tristique nulla. Amet mattis vulputate enim nulla aliquet
-          porttitor. Tellus integer feugiat scelerisque varius morbi. Et tortor
-          at risus viverra adipiscing at in. Pellentesque habitant morbi
-          tristique senectus et. Donec ac odio tempor orci. At ultrices mi
-          tempus imperdiet nulla malesuada. Pellentesque pulvinar pellentesque
-          habitant morbi tristique senectus. Libero justo laoreet sit amet
-          cursus sit amet. Aliquet lectus proin nibh nisl condimentum. Sit amet
-          massa vitae tortor condimentum lacinia quis vel.
-        </p>
-        <p>
-          Personalize this page to what you would like. This is your chance to
-          experiment and show off how awesome you are.
-        </p>
-      </section>
-      <section>
-        <h2>Start up project</h2>
-        <p>
-          This is where the description and link to my start up project will go.
-        </p>
-      </section>
-      <section>
-        <h2>Simon project</h2>
-        <p>
-          This is where the description and link to my implementation of the
-          Simon will go.
-        </p>
-      </section>
-      <section>
-        <h2>Web programming assignments</h2>
-        <p>Replace the links below with your CodePen links.</p>
-        <h3>Code Pen Links</h3>
-        <ul>
-          <li>
-            <a href="https://codepen.io/ParkerMorris11/pen/ExpJyRM">Introduction</a>
-            - Basic HTML page example
-          </li>
-          <li>
-            <a href="https://codepen.io/ParkerMorris11/pen/ZEjZONV">Structure</a> -
-            All the elements for creating page structure
-          </li>
-          <li>
-            <a href="https://codepen.io/ParkerMorris11/pen/ZEjZKVy">Input</a> - All
-            the elements for receiving user input
-          </li>
-          <li>
-            <a href="https://codepen.io/ParkerMorris11/pen/rNrbMOE">Media</a> - All
-            the elements for rendering media objects
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
-</html>
+    
+    
+      <!-- BEGIN ABOUT SECTION -->
+      <div class="about-container" id="about-section">
+      <!-- keep this as an ID for linking purposes only -->
+          <h2 class="fade">About Me
+            <br>
+            <span class="hi-sub fade">BYU Student</span>
+          </h2>
+        <div class="container-fluid">
+          <div class="row about-row">
+            <div class="col-sm-6 col-xs-12 about-left fade">
+              <img src="https://pbs.twimg.com/profile_images/514069123962114048/O_OCcbGL.jpeg" class="profile-pic img-responsive img-circle">
+            </div>
+            <div class="col-sm-6 col-xs-12 about-right fade">
+        <!--   THIS IS WHERE I NEED TO UPDATE TO MAKE INTO 2 PARAGRAPHS THAT WORK -->
+              <p class="about-p">
+                <strong>Skiing</strong> 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit viverra tellus sit amet porttitor. Curabitur lacus dui, posuere sit amet placerat quis, fringilla vel arcu. In egestas sollicitudin leo eu ornare. Morbi condimentum ligula pellentesque aliquam condimentum. Donec malesuada at magna vel vulputate. Morbi sodales lectus vitae semper ultrices. Suspendisse eu ligula eget tellus consectetur volutpat sit amet a turpis.
+    
+    
+                <br>
+                <br>
+    <strong>Mountain Biking:</strong> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit viverra tellus sit amet porttitor. Curabitur lacus dui, posuere sit amet placerat quis, fringilla vel arcu. In egestas sollicitudin leo eu ornare. Morbi condimentum ligula pellentesque aliquam condimentum. Donec malesuada at magna vel vulputate. Morbi sodales lectus vitae semper ultrices. Suspendisse eu ligula eget tellus consectetur volutpat sit amet a turpis.
+    
+    
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- END ABOUT SECTION -->
+      
+      <!-- BEGIN WORK SECTION -->
+      <div class="container work-container">
+        <div id="work-section">
+          <h2>My Portfolio - Coming Soon</h2>
+          
+     <!--     <div class="row">
+            <div class="container">
+              <div class="work-sample">
+                <div class="work-img col-sm-6 col-xs-9 col-xs-offset-1 col-sm-offset-0">
+    NOTE: offset pulls all screen sizes over? figure this out -->
+    <!--               offset 0? 
+                  <img src="http://i63.tinypic.com/2cshsnq.png" alt="Tribute page to Arnold Palmer" class="img-responsive img-thumbnail">
+                </div>
+                <div class="work-info col-sm-6 col-xs-9 col-xs-offset-1 col-sm-offset-0">
+                  <h4>Tribute Page - Free Code Camp</h4>
+                  <p class="description">
+                    The first project for Free Code Camp's Front-End Certification - a tribute page to someone you admire. I chose my favorite golf icon, Arnold Palmer, who passed away in 2016. This was my first real attempt to put a page together and my first experience with Bootstrap. 
+                  </p>
+                  <p>
+                    <span class="technologies-used">
+                      <span class="label label-default">Bootstrap</span>
+                      <span class="label label-danger">HTML</span>
+                      <span class="label label-primary">CSS</span>
+                    </span>
+                  </p>
+                  <div class="work-buttons">
+      <a target="_blank" href="https://github.com/BenThom21/FCC-Front-End/tree/master/Tribute-Page"><button class="hvr-icon-pop" type="button">Demo</button></a>
+      <a target="_blank" class="github-button" href="https://github.com/BenThom21/FCC-Front-End/tree/master/Tribute-Page"><button class="hvr-icon-pop" type="button"> Code</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>  end container  
+            <hr>
+          </div>
+          
+          
+          <div class="row">
+            <div class="container">
+              <div class="work-sample">
+                <div class="work-img col-sm-6 col-xs-9 col-xs-offset-1 col-sm-offset-0">
+                  <img src="http://i66.tinypic.com/2gwuryx.jpg" alt="Tribute page to Arnold Palmer" class="img-responsive img-thumbnail">
+                </div>
+                <div class="work-info col-sm-6 col-xs-9 col-xs-offset-1 col-sm-offset-0">
+                  <h4>Coming Soon!</h4>
+                  <p class="description">
+                    I will update this with my favorite projects as I build them. Come back soon and take a look!
+                  </p>
+                  <p>
+                    <span class="technologies-used">
+                      <span class="label label-default">Default</span>
+                      <span class="label label-danger">HTML</span>
+                      <span class="label label-primary">CSS</span>
+                    </span>
+                  </p>
+                  <div class="work-buttons">
+      <a target="_blank" href="#"><button class="hvr-icon-pop" type="button">Demo</button></a>
+      <a target="_blank" class="github-button" href="#"><button class="hvr-icon-pop" type="button"> Code</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>  end container
+            <hr>
+          </div>
+          
+          
+          <div class="row">
+            <div class="container">
+              <div class="work-sample">
+                <div class="work-img col-sm-6 col-xs-9 col-xs-offset-1 col-sm-offset-0">
+                  <img src="http://i66.tinypic.com/2gwuryx.jpg" alt="Tribute page to Arnold Palmer" class="img-responsive img-thumbnail">
+                </div>
+                <div class="work-info col-sm-6 col-xs-9 col-xs-offset-1 col-sm-offset-0">
+                  <h4>Coming Soon!</h4>
+                  <p class="description">
+                    I will update this with my favorite projects as I build them. Come back soon and take a look!
+                  </p>
+                  <p>
+                    <span class="technologies-used">
+                      <span class="label label-default">Default</span>
+                      <span class="label label-danger">HTML</span>
+                      <span class="label label-primary">CSS</span>
+                    </span>
+                  </p>
+                  <div class="work-buttons">
+      <a target="_blank" href="#"><button class="hvr-icon-pop" type="button">Demo</button></a>
+      <a target="_blank" class="github-button" href="#"><button class="hvr-icon-pop" type="button"> Code</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>  end container-->  
+          </div>
+          
+        </div> <!--End ".work-section" -->
+      </div>
+      <!-- END WORK SECTION -->
+      
+    
+    <!--   BEGIN CONTACT SECTION -->
+      <div class="contact-container" id="contact-section">
+        <h2> Get in Touch! </h2>
+          <div class="container contact-section">
+            <div class="row">
+              
+            </div>
+            <div class="email-button">
+              <a href="mailto:parkerqmorris@gmail.comsubject=I%20Saw%20Your%20Website" class="contact-button">
+                Email Me
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                <span>parkerqmorris@gmail.com</span>
+              </a>
+            </div>
+            <br>
+    
+            
+            
+            <div class="contact-buttons">
+              <a class="social github-social" href="https://github.com/ParkerMorris11" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a class="social codepen-social" href="https://codepen.io/your-work/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        
+       
+              <a class="social linkedin-social" href="https://www.linkedin.com/in/parker-morris-85198b257/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <
+            </div>
+        </div>
+      </div> 
+    
+    <!--     END CONTACT SECTION -->
+      
+    
+    
+      <!-- BEGIN FOOTER -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="footer col-xs-12">
+            <p>
+              By Parker Morris
+            <br>
+              <i class="fa fa-copyright" aria-hidden="true"></i> 2023 
+              <span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Utah</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </body>
