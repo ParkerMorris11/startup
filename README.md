@@ -3,6 +3,8 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
 
+--- 
+
 - I learned how succesfully commit and fetch my README file along with having a better understanding of how GitHub functions.
 - I learned how to successfully run Shell Scripts and how Sub Level Domains run
 - HTML Elements
@@ -11,7 +13,9 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 - BootStrap | CSS Styling & Declarations | Appealing Interfaces
 - Launching Websites With Shell Scripts | Creating a Functioning Website
 - JavaScript Functions | Syntax | Score Table
+- JavaScript Websockets | Elements | Sytanx | Working GameBoard| Event Handling | Function Recall | Query Selector 
 
+--- 
 
 Created My First Web Server on Jan 27, 2023
 http://18.117.47.87/
@@ -24,6 +28,8 @@ https://connectfour.click/
 
 Created My First Sub Level Domain on Feb 8, 2023
 https://simon.connectfour.click/
+
+--- 
 
 # StartUp Project
 
