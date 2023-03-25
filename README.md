@@ -5,7 +5,7 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 --- 
 
-#Simon Service
+# Simon Service
 - NPM Modules & Commands
 - Converting a Program to include Services
 - Service Endpoints 
