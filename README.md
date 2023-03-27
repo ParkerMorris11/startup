@@ -3,7 +3,11 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
 
---- 
+# Simon DB
+- Enivroment Variables 
+- Mongo DB and Atlas
+- Properly Storing Credentials 
+
 
 # Simon Service
 - NPM Modules & Commands
