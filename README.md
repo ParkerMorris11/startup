@@ -3,6 +3,12 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
 
+# Simon Login
+- Authorization cookies
+- Application service endpoints
+- Authentication tokens
+- Login controls
+
 # Simon DB
 - Enivroment Variables 
 - Mongo DB and Atlas
