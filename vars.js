@@ -1,7 +1,7 @@
 var Game = {};
 
 Game.config = {
-  startingPlayer: "black", // Choose 'black' or 'red'.
+  startingPlayer: "black", 
   takenMsg: "This position is already taken. Please make another choice.",
   drawMsg: "This game is a draw.",
   winMsg: "The winner is: ",

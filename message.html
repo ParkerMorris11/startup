@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Peer Chat</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <title>WebSocket Chat</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<header class="container-fluid">
-		<nav class="navbar fixed-top navbar-dark">
-		  <a class="navbar-brand" href="#">Connect Four<sup>&reg;</sup></a>
-		  <menu class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="connectfour.html">Play</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="scoreboard.html">Scores</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="message.html">Message</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link active" href="quote.html">Quotes</a>
-			</li>
-		  </menu>
-		</nav>
-	  </header>
-	
-	<h1>Peer Chat</h1>
+    <div>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="connect()">Connect</button>
+    </div>
+    <div id="chat-container" style="display:none;">
+        <div>
+            <span>Connected as:</span>
+            <span id="username"></span>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <input type="text" id="message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div>
+            <label for="messages">Messages:</label>
+            <ul id="messages"></ul>
+        </div>
+    </div>
+    <script>
+        let ws;
+        let username;
 
-	<label for="username">Username:</label>
-	<input type="text" id="username">
-	<button onclick="connect()">Connect</button>
-	
-	<div id="chat-box"></div>
-	
-	<label for="message">Message:</label>
-	<input type="text" id="message" disabled>
-	<button onclick="sendMessage()" disabled>Send</button>
-    <script src="message.html"></script>
+        function connect() {
+            const nameInput = document.getElementById('name');
+            username = nameInput.value;
+
+            if (!username) {
+                alert('Please enter a name');
+                return;
+            }
+
+            const url = 'ws://localhost:3000';
+            ws = new WebSocket(url);
+
+            ws.onopen = () => {
+                console.log('Connected to server');
+                const chatContainer = document.getElementById('chat-container');
+                chatContainer.style.display = 'block';
+                const usernameElement = document.getElementById('username');
+                usernameElement.textContent = username;
+            };
+
+            ws.onmessage = event => {
+                console.log('Received message:', event.data);
+                const messages = document.getElementById('messages');
+                const li = document.createElement('li');
+                li.textContent = event.data;
+                messages.appendChild(li);
+            };
+
+            ws.onerror = error => {
+                console.error('WebSocket error:', error);
+            };
+
+            ws.onclose = event => {
+                console.log('Disconnected from server');
+            };
+        }
+
+        function sendMessage() {
+            const messageInput = document.getElementById('message');
+            const message = messageInput.value;
+
+            if (!message) {
+                alert('Please enter a message');
+                return;
+            }
+
+            const data = { username, message };
+            ws.send(JSON.stringify(data));
+            messageInput.value = '';
+        }
+    </script>
 </body>
 </html>
