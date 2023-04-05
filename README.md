@@ -3,6 +3,25 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
 
+# Simon Login
+- Authorization cookies
+- Application service endpoints
+- Authentication tokens
+- Login controls
+
+# Simon DB
+- Enivroment Variables 
+- Mongo DB and Atlas
+- Properly Storing Credentials 
+
+
+# Simon Service
+- NPM Modules & Commands
+- Converting a Program to include Services
+- Service Endpoints 
+- Public Folders
+- Types of API's
+
 --- 
 
 - I learned how succesfully commit and fetch my README file along with having a better understanding of how GitHub functions.
@@ -14,6 +33,7 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 - Launching Websites With Shell Scripts | Creating a Functioning Website
 - JavaScript Functions | Syntax | Score Table
 - JavaScript Websockets | Elements | Sytanx | Working GameBoard| Event Handling | Function Recall | Query Selector 
+
 
 --- 
 
