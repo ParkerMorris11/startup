@@ -3,6 +3,15 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
 
+# Simon Service
+- Websockets
+- Endpoints
+- Login
+- Mongo DB
+- Database Connection
+- SSH PM2
+
+
 # Simon Login
 - Authorization cookies
 - Application service endpoints
