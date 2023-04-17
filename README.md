@@ -5,7 +5,11 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 ---
 
 # Simon Websocket
--
+- Display and Generating Websocket Messages
+- Functionality for Peer Communication 
+- Connecting
+- Broadcasting
+- Displaying Events
 
 
 # Simon React
