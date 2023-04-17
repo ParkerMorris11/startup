@@ -2,6 +2,18 @@
 CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
+---
+
+# Simon Websocket
+-
+
+
+# Simon React
+- View Components 
+- Populate App.jsx
+- React Components 
+- Template Code
+- Convert to React Bootstrap
 
 # React
 - React Router
@@ -63,6 +75,9 @@ Encrypted My First Domain on Jan 6, 2023
 https://connectfour.click/
 
 Created My First Sub Level Domain on Feb 8, 2023
+https://simon.connectfour.click/
+
+Created My Final Domain Release April 17, 2023
 https://simon.connectfour.click/
 
 --- 
