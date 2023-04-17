@@ -3,6 +3,13 @@ CS 260 Web Programming - BYU - Winter Semester 2023
 
 # What I've Learned
 
+# React
+- React Router
+- Setup
+- Converting Components 
+- Hooks
+- Project Structure
+
 # Simon Service
 - Websockets
 - Endpoints
